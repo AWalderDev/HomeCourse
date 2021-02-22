@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="169dp"
+            android:layout_weight=".5"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/bag_name_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="11dp"
+                android:hint="Enter Name to Search"
+                android:inputType="text"
+                android:textSize="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/searchButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignRight="@id/bag_name_search_edit"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="updateRecyclerViewNames"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bag_recycler_view"
+                android:layout_width="578dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bag_name_search_edit"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/round_select_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="50sp"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@id/spinner"/>
+
+            <TextView
+                android:id="@+id/text_view_bag_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/text_view_name"
+                android:textSize="50sp"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@id/spinner"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxCaddy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="30sp"
+                android:text="Caddy?"
+                android:layout_below="@id/text_view_bag_slot"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/select_round_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Select Round Type:"
+                android:layout_alignLeft="@id/checkBoxCaddy"
+                android:layout_below="@id/checkBoxCaddy"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_below="@id/select_round_type"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/colorPrimary"
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="30sp"
+                android:layout_margin="20dp"
+                android:layout_below="@+id/spinner"
+                android:onClick="submitRound"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="255dp"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="10dp"
+                android:text="Bags Out:"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/on_course_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="194dp"
+                android:layout_marginLeft="194dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="updateRecyclerViewBags"
+                android:text="On Course"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/off_site_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="219dp"
+                android:layout_marginRight="219dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/on_course_btn"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="updateRecyclerViewBags"
+                android:text="  Off-Site "
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bag_recycler_view_out_bags"
+                android:layout_width="578dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/on_course_btn"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

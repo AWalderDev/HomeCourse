@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/dialog_bag_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bag Slot"
+        android:layout_below="@id/dialog_name"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/dialog_return_bag_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_return_bag_question"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/dialog_bag_slot"
+        android:textSize="20sp"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HomeCourse</string>
+    <string name="first_name_label">First Name:</string>
+    <string name="last_name_label">Last Name:</string>
+    <string name="bag_slot_label">Bag Slot:</string>
+    <string name="dialog_return_bag_question">Return Bag to Storage?</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "5209131437",
+    "firebase_url": "https://homecourse-ad752.firebaseio.com",
+    "project_id": "homecourse-ad752",
+    "storage_bucket": "homecourse-ad752.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5209131437:android:d0ff8a8f09a4b5ef4f3924",
+        "android_client_info": {
+          "package_name": "com.homecourse.homecourse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5209131437-efnntdga9umk4kme3s3lst4nfblpj7nm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUlgE27FYS4hEeO9lcdZDMyO1ZJggUpsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5209131437-efnntdga9umk4kme3s3lst4nfblpj7nm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
